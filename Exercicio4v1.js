@@ -1,4 +1,4 @@
-let num = prompt("Numero");
+let num = prompt("Digite o número");
 
 if(Math.sign(num)>0){
   console.log("Positivo!");
