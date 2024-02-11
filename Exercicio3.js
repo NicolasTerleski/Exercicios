@@ -1,4 +1,4 @@
-let actualNum = prompt("Digite o número abaixo que você quer saber a tabuada");
+let actualNum = prompt("Digite o número do qual você quer saber a tabuada");
 let lastNum = 10;
 
 for(let numAtual = 1; (numAtual<=lastNum); numAtual++){
