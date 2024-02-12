@@ -1,0 +1,19 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+*{
+  font-family: Arial;
+}
+
+button{
+  height: 40px;
+  width: 75px;
+
+  background-color: rgb(54, 230, 51);
+  border:none;
+  border-radius: 5px;
+}
+
+
