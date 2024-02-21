@@ -1,0 +1,27 @@
+
+import { ordenar } from './funcoes/ordenar.js';
+import { validar } from './funcoes/validar.js';
+
+function main(){
+	let num1 = Number(prompt('Digite o primeiro número: '));
+	let num2 = Number(prompt('Digite o segundo número: '));
+	let num3 = Number(prompt('Digite o terceiro número: '));
+
+	const validado = validar(num1, num2, num3);
+	
+	if (validado == true){
+		// Está validado
+		//console.log(ordenar(num1, num2, num3));
+
+		console.log("O maior números é: " + ordenar(num1, num2, num3)[0]);
+		console.log("O números do meio é: " + ordenar(num1, num2, num3)[1]);
+		console.log("E por último, o menor é: "+ ordenar(num1, num2, num3)[2]);
+		// Eu estou com o olho dilatado, então não consigo ler nada, mesmo assim, consegui fazer isso funcionar.
+	} else {
+		// Não está
+		alert("Não foi possível ordenar os números, pois algum deles não é um número.");
+		main();
+	}
+}
+
+main();
